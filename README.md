@@ -6,14 +6,9 @@ This project is designed to extract, process, and visualize news data from vario
 - [Project Overview](#project-overview)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
 - [Project Structure](#project-structure)
 - [Data Pipeline](#data-pipeline)
-- [Database Management](#database-management)
 - [Visualization](#visualization)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
@@ -34,20 +29,20 @@ To run this project, you will need:
 - [PostgreSQL](https://www.postgresql.org/download/) for data storage
 - Required Python libraries (install using `pip install -r requirements.txt`)
 
-### Project Structure
+## Project Structure
 `data_extraction/`: Contains code for data extraction from NewsAPI.
 `data_cleaning/`: Includes scripts for data cleaning and normalization.
 `database/`: Manages PostgreSQL database setup and schema design.
 `visualization/`: Houses code for generating interactive visualizations.
 `airflow/`: Defines Apache Airflow DAGs for task automation.
 
-### Data Pipeline
+## Data Pipeline
 This project follows a structured ETL (Extract, Transform, Load) process:
 
 - Extract: News data is obtained from NewsAPI and processed for cleaning and transformation.
 - Transform: Data is cleaned, normalized, and structured into a star schema for efficient querying.
 - Load: Cleaned data is loaded into a PostgreSQL database with primary and foreign key relations.
 
-### Visualization
+## Visualization
 Interactive visualizations are generated to depict daily and overall word clouds.
 News source statistics are presented, showcasing the number of articles each source has.
